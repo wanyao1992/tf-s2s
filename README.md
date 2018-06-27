@@ -3,11 +3,18 @@ A simple version of seq2seq with tensorflow.
 
 ## Features
 - Data preprocess
+- Multi-RNN
 - Attention
 - Beam Search
 
 ## Run
+
 ### Dataset
+Copy the file to your data folder (suggested).
+
+In my test, all the data and mode file are saved in '/media/BACKUP/ghproj_d/tf-seq2seq'.
+
+You need to change the path to your own path.
 - src-train.txt
 - tgt-train.txt
 - src-val.txt
@@ -30,5 +37,6 @@ python main.py --cell_type 'lstm' --attention_type 'luong' --hidden_units 1024 -
 ```
 ### Testing
 ```
-
+python main.py --cell_type 'lstm' --attention_type 'luong' --hidden_units 1024 --depth 2 --embedding_size 500  --mode test >~/log/tf-s2s/log.main.test
 ```
+
