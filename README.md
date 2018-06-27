@@ -9,6 +9,9 @@ A simple version of seq2seq with tensorflow.
 
 ## Run
 
+## Testing Environment
+- Python 3.6
+- Tensorflow 1.6.0
 ### Dataset
 Copy the file to your data folder (suggested).
 
